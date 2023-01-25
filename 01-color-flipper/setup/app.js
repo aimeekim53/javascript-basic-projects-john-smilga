@@ -1,10 +1,14 @@
 
-// create an array called 'colors' which has different color values.
 const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];
+// create an array called 'colors' which has different color values.
 
-// create function to randomly pick one of the values from array 'çolors'
 function randomcolor() {
-    const randomIndex = Math.floor(Math.random()*colors.length);
+// create function to randomly pick one of the values from array 'çolors'
+
+    const randomNumber = Math.random()*colors.length;
+    console.log("randomNumber", randomNumber)
+    const randomIndex = Math.floor(randomNumber);
+    console.log("randomIndex", randomIndex)
     return colors[randomIndex];
     // previous code: return colors[Math.floor(Math.random()*colors.length)];
 }
@@ -21,8 +25,8 @@ const actionToPerform = () => { // create arrow function.
     // classToChangeColor.innerHTML = pickedColor; 
 };
 
+document.getElementById("btn").addEventListener('click', actionToPerform);
 // getElementById() method is used to return an element to read/edit an HTML element.
 // getElementById() is to specify where the event happens.
 // syntex: element.addEventListener(event, function, useCapture)
-document.getElementById("btn").addEventListener('click', actionToPerform);
 
