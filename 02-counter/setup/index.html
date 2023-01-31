@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,14 +9,23 @@
     <!-- styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
+  
   <body>
-    <h1>Counter</h1>
-    <p id="numberDisplay"></p>
-    <button onclick="buttonDecreaseClick()">DECREASE</p>
-    <input type="text" id="buttonDecrease" value="0"></button></input>
-    <p id="buttonReset">RESET</p>
-    <p id="buttonIncrease">INCREASE</p>
-    <!-- javascript -->
+
+    <main>
+      <div class="container">
+        <h1>Counter</h1>
+        <div id="number-display"></div>
+          <div class="button-container">
+            <button class='btn'onclick="buttonDecreaseClick()">DECREASE</button>
+            <button class='btn'onclick="buttonResetClick()">RESET</button>
+            <button class  ='btn' onclick="buttonIncreaseClick()">INCREASE</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+      <!-- javascript -->
     <script src="app.js"></script>
   </body>
 </html>
